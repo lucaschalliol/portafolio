@@ -1,0 +1,218 @@
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    background-color: whitesmoke;
+}
+
+.presentacion-logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
+
+.presentacion-nombre {
+    margin-bottom: 1rem;
+    font-size: 36px;
+}
+
+.presentacion-especialidad {
+    font-size: 36px;
+}
+
+.subrayarado-celeste:after {
+    content: '';
+    display: block;
+    height: 6px;
+    background-color: rgba(45, 155, 240, 90%);
+}
+
+/*  Fin de la presentacion  */
+
+/*  Inicio de las tecnologias  */
+
+.tecnologias {
+    height: 600px;
+    background-color: #1A1A1A;
+    padding-top: 1rem;
+}
+
+.tecnologias-titulo {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 36px;
+    color: white;
+}
+
+.tecnologias-titulo:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 6px;
+    width: 10rem;
+    background-color: rgba(45, 155, 240, 90%);
+}
+
+.tecnologias-contenedor-iconos {
+    height: 100px;
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.tecnologias-contenedor-iconos img{ 
+    height: 4rem;
+}
+
+.tecnologias-contenedor-iconos h3{
+    margin-top: 8px;
+    color: white;
+}
+
+/* Fin de tecnologias  */
+
+/* Inicio de proyectos*/
+
+.proyectos {
+    height: 660px;
+    background-color: whitesmoke;
+    padding-top: 1rem;
+}
+
+.proyectos-titulo {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 36px;
+}
+
+.proyectos-titulo:after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 9rem;
+    margin: 0 auto;
+    background-color: rgba(45, 155, 240, 90%);
+}
+
+.proyectos-card-contenedor {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+
+.proyectos-card {
+    height: 490px;
+    width: 350px;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    font-size: 17px;
+    color: white;
+    background-color: #1A1A1A;
+}
+
+.proyectos-card h3{
+    margin-top: 1rem;
+    font-size: 28px;
+}
+
+.proyectos-card h3::after{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 5rem;
+    margin: 0 auto;
+    background-color: rgba(45, 155, 240, 90%);
+}
+
+.proyectos-card img {
+    height: 280px;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    padding: 8px 1rem;
+}
+
+.proyectos-card p {
+    margin: 10px 0;
+    background-color: #1A1A1A;
+}
+
+.proyectos-card button {
+    height: 31px;
+    width: 7rem;
+    border-radius: 10px;
+    color: white;
+    border-color: white;
+    background-color: #1A1A1A;
+}
+
+.proyectos-card button:hover {
+    border-color: rgba(45, 155, 240, 90%);
+    cursor: pointer;
+}
+
+
+/* Fin de la card */
+
+/* Fin de proyectos*/
+
+/* Inicio de Contacto*/
+
+.contacto {
+    height: 620px;
+    background-color: #1A1A1A;
+    padding-top: 1rem;
+}
+
+.contacto-titulo {
+    margin-top: 1rem;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+.contacto-titulo::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 6px;
+    margin: 0 auto;
+    background-color: rgba(45, 155, 240, 90%);
+}
+
+/* Fin de contacto*/
+
+/* Inicio de atribuciones*/
+
+.atribucion-iconos {
+    text-align: center;
+    margin-top: 4rem;
+    color: white;
+}
+
+.atribucion-iconos p {
+    margin-top: 1rem;
+    font-size: 1em;
+}
+
+.atribucion-iconos a {
+    text-decoration: none;
+    color: rgba(45, 155, 240, 90%);
+}
+
+/* Fin de las atribuciones*/
+
+/*
+@media (max-width: 600px) {
+    .proyectos {
+        height: 1200px;
+    }
+  }
+*/

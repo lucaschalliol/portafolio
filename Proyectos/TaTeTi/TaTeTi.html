@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../nav/nav.css">
+    <link rel="stylesheet" href="TaTeTi.css">
+    <link rel="icon" type="image/jpg" href="../../favicon.png"/>
+    <title>Proyectos</title>
+  </head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="../../index.html"><img src="../../nav/icono-nav-home.png" class="nav-home-icon" alt="Freepik house icon"></a>
+    <img src="../../nav/icono-nav-bars.png" id="nav-menu-icon" alt="Pixel perfect bars icon" onclick="displayMenu()">
+  </nav>
+
+  <div id="display-bars-menu">
+    <div class="display-bars-menu-option"><a href="../../#proyectos">Mas Proyectos</a></div>
+    <div class="display-bars-menu-option"><a href="../../#tecnologias">¿Que tecnologías se usar?</a></div>
+    <div class="display-bars-menu-option"><a href="../../#contacto">Contacto</a></div>
+  </div>
+
+  <script>
+  const displayBarsMenuID = document.getElementById("display-bars-menu");
+  var menuActivo = false;
+
+  function displayMenu() {
+    if (menuActivo === false) {
+      displayBarsMenuID.style.display = "block";
+      menuActivo = true;
+    }
+    else if (menuActivo === true) {
+      displayBarsMenuID.style.display = "none";
+      menuActivo = false;
+    }    
+  }
+  </script>
+</header>
+
+<main>
+
+  <h2 id="turno">Turno del jugador: X</h2>
+
+  <h2 id="ganador"></h2>
+
+  <div class="tablero">
+    <button class="tablero-boton" id="boton-1" onclick="jugarTaTeTi(1)"></button>
+    <button class="tablero-boton" id="boton-2" onclick="jugarTaTeTi(2)"></button>
+    <button class="tablero-boton" id="boton-3" onclick="jugarTaTeTi(3)"></button>
+    <button class="tablero-boton" id="boton-4" onclick="jugarTaTeTi(4)"></button>
+    <button class="tablero-boton" id="boton-5" onclick="jugarTaTeTi(5)"></button>
+    <button class="tablero-boton" id="boton-6" onclick="jugarTaTeTi(6)"></button>
+    <button class="tablero-boton" id="boton-7" onclick="jugarTaTeTi(7)"></button>
+    <button class="tablero-boton" id="boton-8" onclick="jugarTaTeTi(8)"></button>
+    <button class="tablero-boton" id="boton-9" onclick="jugarTaTeTi(9)"></button>
+  </div>
+
+  <button id="cambiarModo" onclick="cambiarModo()">Cambiar a modo Jugador VS IA</button>
+  
+  <button id="reiniciar" onclick="reiniciar()">Reiniciar Partida</button>
+    
+</main>
+
+<script src="TaTeTi.js"></script>
+
+</body>
+</html>

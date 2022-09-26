@@ -1,0 +1,64 @@
+html {
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#turno {
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+#ganador {
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+.tablero {
+    height: 17rem;
+    width: 17rem;
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    margin-top: 1rem;
+    }
+
+.tablero-boton {
+    background-color: whitesmoke;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+.grid-item:hover{
+    background-color: rgb(194, 188, 180);
+}
+
+#reiniciar {
+    display: block;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    visibility: hidden;
+}
+
+#cambiarModo {
+    display: block;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cambiarModo:hover, #reiniciar:hover {
+    transform: scale(1.05);
+} 
