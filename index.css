@@ -67,7 +67,7 @@
 }
 
 .tecnologias-contenedor-iconos img{ 
-    height: 4rem;
+    height: 72px;
 }
 
 .tecnologias-contenedor-iconos h3{
@@ -158,9 +158,6 @@
     cursor: pointer;
 }
 
-
-/* Fin de la card */
-
 /* Fin de proyectos*/
 
 /* Inicio de Contacto*/
@@ -199,7 +196,7 @@
 
 .atribucion-iconos p {
     margin-top: 1rem;
-    font-size: 1em;
+    font-size: 18px;
 }
 
 .atribucion-iconos a {
@@ -208,11 +205,3 @@
 }
 
 /* Fin de las atribuciones*/
-
-/*
-@media (max-width: 600px) {
-    .proyectos {
-        height: 1200px;
-    }
-  }
-*/
